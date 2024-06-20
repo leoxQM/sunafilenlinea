@@ -1,0 +1,16 @@
+<ng-container>
+    <app-topbar [visInicioHeader]="vistaInicio" [visTrabajadorHeader]="vistaTrabajador" [visEmpleadorHeader]="vistaEmpleador" (OA_FollowingBack)="getNextOrBack($event)"></app-topbar>
+</ng-container>
+<ng-container *ngIf="vistaInicio">
+    <app-c-inicio (OA_FollowingBack)="getNextOrBack($event)"></app-c-inicio>
+</ng-container>
+<ng-container *ngIf="vistaEmpleador">
+    <app-c-sunafil-empleador (OA_FollowingBack)="getNextOrBack($event)"></app-c-sunafil-empleador>
+</ng-container>
+<ng-container *ngIf="vistaTrabajador">
+    <app-c-sunafil-trabajador (OA_FollowingBack)="getNextOrBack($event)"></app-c-sunafil-trabajador>
+</ng-container>
+<ng-container>
+    <app-footer [visInicioFooter]="vistaInicio"></app-footer>
+</ng-container>
+

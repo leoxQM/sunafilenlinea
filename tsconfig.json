@@ -1,0 +1,41 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,//rue,
+    "noImplicitOverride": true,
+    "strictPropertyInitialization": false,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "paths": {
+      "@primeNgModule": ["src/app/@primeNg/sharedPrimeNg.module"],
+      "@interfaces":["src/app/@models/interfaces"],
+      "@constantes":["src/app/@models/constantes"],
+      "@sharedApp":["src/app/@shared/sharedApp.service"],
+      "@UtilitarioApp":["src/app/@shared/utilitarioApp.service"],
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": false,
+    "strictInputAccessModifiers": false,
+    "strictTemplates": false
+  }
+}

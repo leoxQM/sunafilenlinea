@@ -1,0 +1,41 @@
+{
+    "solicitud": {
+        "ruc": "10445971320",
+        "razonSocial": "ZEÑA RIVERA EDUARDO MIGUEL",
+        "codigoDepartamento": "02",
+        "descripcionDepartamento": "ANCASH",
+        "codigoProvincia": "18",
+        "descripcionProvincia": "SANTA",
+        "codigoDistrito": "01",
+        "direccion": "dir prueba",
+        "descripcionDistrito": "CHIMBOTE",
+        "flagMype": "S"
+    },
+    "accion": {
+        "fechaPropuesta": "01/04/2024",
+        "cantidadBeneficiarios": "6",
+        "flagModalidad": 2,
+        "motivoSolicitud": "probando descripcion solicitud",
+        "materias": [
+            {
+                "codigoMateria": 17,
+                "descripcionMateria": "ENTREGA DE BOLETAS DE PAGO"
+            },
+            {
+                "codigoMateria": 19,
+                "descripcionMateria": "CONTRATOS DE TRABAJO  - ENTREGA DE CONTRATO DE TRABAJO"
+            }
+        ]
+    },
+    "contacto": {
+        "codigoTipoDocumento": "03",
+        "tipoDocumento": "DOCUMENTO NACIONAL DE IDENTIDAD",
+        "numeroDocumentoContacto": "44597132",
+        "apellidoPaternoContacto": "ZEÑA",
+        "apellidoMaternoContacto": "RIVERA",
+        "nombresContacto": "EDUARDO MIGUEL",
+        "emailContacto": "miky.leo.26@gmail.com",
+        "confirmarCorreo": "miky.leo.26@gmail.com",
+        "numeroCelular": "963256484"
+    }
+}

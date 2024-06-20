@@ -1,0 +1,42 @@
+
+<div class="w-full h-full container-body">
+   <div class="w-10 mx-auto py-3 ">
+       <div class="text-center">
+           <h1 class="color-titulo text-sunafilEnLinea lg:text-6xl font-bold ">Sunafil en línea</h1>
+           <p class="color-frase text-xl lg:text-2xl">Al servicio del cuidadano</p>
+       </div>
+   </div>
+   <div class="container-opciones gap-4 w-8 lg:w-8 mx-auto pb-7">
+       <div class="border-round bg-white " [@moverIzquierdaDerecha]>
+           <div class="flex flex-column py-3 lg:py-6 gap-2 justify-content-center">
+             <img src="assets/img/SunafilEnLineaImg/APLICACIONES/trabajador-icono-inicio.svg" class="w-3 lg:w-2 mx-auto" alt="">
+             <div class="flex flex-column gap-2 lg:gap-4">
+                <div class="flex flex-column gap-2">
+                    <h3 class="text-center text-footerTitulo my-0 font-bold lg:text-4xl">Soy trabajador</h3>
+                    <p class="text-center w-10 mx-auto">Consultas y trámites dirigidos
+                     a los trabajadores y trabajadoras</p>
+                </div>
+                <div  class="text-center mt-0 w-4 mx-auto">
+                    <a href="#" (click)="siguiente('TR')" class="flex align-items-center justify-content-center text-center font-bold color-textingresar text-2xl">Ingresar<i class="pi pi-arrow-right font-bold color-textingresar mt-2 ml-3"></i>
+                    </a>
+                </div>
+             </div>
+           </div>
+       </div>
+       <div class="border-round bg-white cajaAnimada2" [@moverDerechaIzquierda]>
+        <div class="flex flex-column py-3 lg:py-6 gap-2 justify-content-center">
+          <img src="assets/img/SunafilEnLineaImg/APLICACIONES/empleador-icono-inicio.svg" class="w-3 lg:w-2  mx-auto" alt="">
+          <div class="flex flex-column gap-2 lg:gap-4">
+             <div class="flex flex-column gap-2">
+                 <h3 class="text-center text-footerTitulo my-0 font-bold lg:text-4xl">Soy empleador</h3>
+                 <p class="text-center w-10 mx-auto">Consultas y trámites dirigidos
+                  a las empresas y empleadores</p>
+             </div>
+             <div class="text-center mt-0 w-4 mx-auto">
+                 <a href="#" (click)="siguiente('EM')" class="flex align-items-center justify-content-center text-center font-bold color-textingresar text-2xl">Ingresar<i class="pi pi-arrow-right font-bold color-textingresar mt-2 ml-3"></i>
+                 </a>
+             </div>
+          </div>
+        </div>
+    </div>
+</div>

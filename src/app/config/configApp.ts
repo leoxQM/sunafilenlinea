@@ -1,0 +1,1 @@
+export const variableStorage =  'SUNAFIL_CAPACITA';
