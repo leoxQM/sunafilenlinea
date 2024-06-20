@@ -1,0 +1,10 @@
+[
+    {
+        "codigo": 1,
+        "descripcion": "Presencial"
+    },
+    {
+        "codigo": 2,
+        "descripcion": "Virtual"
+    }
+]

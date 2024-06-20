@@ -1,0 +1,18 @@
+[
+    {
+        "codigo": 1,
+        "descripcion": "Asiistencia Técnica"
+    },
+    {
+        "codigo": 2,
+        "descripcion": "Orientación"
+    },
+    {
+        "codigo": 3,
+        "descripcion": "Charla"
+    },
+    {
+        "codigo": 4,
+        "descripcion": "Taller"
+    }
+]
