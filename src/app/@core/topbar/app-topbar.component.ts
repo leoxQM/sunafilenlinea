@@ -7,24 +7,22 @@ import { procesoComponents, viewComponents } from '@constantes';
 @Component({
   selector: 'app-topbar',
   templateUrl: './app-topbar.component.html',
-  styleUrls: ['./app-topbar.component.scss']
-
+  styleUrls: ['./app-topbar.component.scss'],
 })
 export class AppTopbarComponent {
+  @ViewChild('menubutton') menuButton!: ElementRef;
+  @ViewChild('topbarmenubutton') topbarMenuButton!: ElementRef;
+  @ViewChild('topbarmenu') menu!: ElementRef;
+
   @Output() OA_FollowingBack = new EventEmitter<I_ChangeViewComponents>();
+  @Output() OS_BuscarServicio = new EventEmitter<string>();
   @Input() visInicioHeader = false;
   @Input() visTrabajadorHeader = false;
   @Input() visEmpleadorHeader = false;
-
-  @ViewChild('menubutton') menuButton!: ElementRef;
-
-  @ViewChild('topbarmenubutton') topbarMenuButton!: ElementRef;
-
-  @ViewChild('topbarmenu') menu!: ElementRef;
+  nombreServicio: string = '';
   items!: MenuItem[];
 
-
-  constructor(public layoutService: LayoutService) { }
+  constructor(public layoutService: LayoutService) {}
 
   backEmpleador() {
     this.OA_FollowingBack.emit({
@@ -38,5 +36,9 @@ export class AppTopbarComponent {
       proceso: procesoComponents.Back,
       view: viewComponents.Trabajador,
     });
+  }
+
+  buscarServicio(){
+    this.OS_BuscarServicio.emit(this.nombreServicio);
   }
 }

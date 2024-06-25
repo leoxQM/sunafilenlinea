@@ -4,125 +4,131 @@
             <h2 class="color-titulo text-4xl">Consultas y trámites</h2>
             <p class="w-1 mx-auto xl:ml-0 mt-0 bg-lineaRoja"></p>
         </div>
-        <div class="grid" [@aparecerAnimacion]>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+        <div class="grid grid-container" [@aparecerAnimacion]="triggerAnimation">
+          <a *ngFor="let listDataServicio of listDataServicios" [href]="'https://'+listDataServicio.url" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+                <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
+                    <img [src]="'assets/img/SunafilEnLineaImg/APLICACIONES/'+listDataServicio.icono+'.svg'" class="w-6" alt="">
+                    <h6 class="color-titulo font-bold text-center mt-2">{{ listDataServicio.nombreServicioEmpleador }}</h6>
+                </div>
+            </a>
+            <!-- <a href="https://aplicativosweb6.sunafil.gob.pe/si.mesaVirtual/" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/mesa-de-partes.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Mesa de
                         Partes <br> Digital</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://api-seguridad.sunat.gob.pe/v1/clientessol/b6474e23-8a3b-4153-b301-dafcc9646250/oauth2/login?originalUrl=https://casillaelectronica.sunafil.gob.pe/si.inbox/Login/Empresa&state=s" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/casilla.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Casilla<br>
                         electrónica</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://aplicativosweb7.sunafil.gob.pe/si.consultaExpediente/" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/consulta-exp.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Consulta
                         tu <br> expediente</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://aplicativosweb7.sunafil.gob.pe/si.consultaTramite/" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/consulta-tramite.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Consulta
                         tu <br> trámite</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://aplicativosweb5.sunafil.gob.pe/si.consultasLaborales/inicio" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold"><img src="assets/img/SunafilEnLineaImg/APLICACIONES/sunafil-responde.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Sunafil <br>
                         Responde</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://aplicativosweb2.sunafil.gob.pe/si.consultaInspectores/" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/identificacion-de-insp.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Identificación
                         de inspectores</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://api-seguridad.sunat.gob.pe/v1/clientessol/9b1dfad8-aebe-4905-89cc-84d7bfb3493a/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.validacionEmpresa/Login/Empresa&state=s" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/chequea-contratista.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Chequea
                         tu <br> contratista</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://denuncias.servicios.gob.pe/?gobpe_id=455" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/denuncia-actos-corrupcion.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Denuncia actos
                         decorrupción</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://aplicativosweb5.sunafil.gob.pe/si.consultaResoluciones/" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold"><img src="assets/img/SunafilEnLineaImg/APLICACIONES/datos-abiertos-01.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Datos abiertos
                         gubernamentales</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://www.sunafil.gob.pe/portal/index.php?option=com_content&view=article&layout=edit&id=810" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/resoluciones-inspectivas.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Resoluciones
                         sistema inspectivo</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://api-seguridad.sunat.gob.pe/v1/clientessol/9b1dfad8-aebe-4905-89cc-84d7bfb3493a/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.validacionEmpresa/Login/Empresa&state=s" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/calculo-cuota-empleo-02.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Cálculo cuota
                         de <br> empleo</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
+            <a href="https://api-seguridad.sunat.gob.pe/v1/clientessol/7e30c2f1-f047-4ed6-a575-9f079c9f84da/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.encuestaSST/Login/Empresa&state=s" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/diagnostico-sst.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Diagnóstico <br>
                         SST</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 xl:mx-auto cajitaAnimacion">
+            <a href="https://aplicativosweb6.sunafil.gob.pe/si.saip/" target="_blank" class="col-6 md:col-3 xl:col-2  cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold"><img src="assets/img/SunafilEnLineaImg/APLICACIONES/acceso-a-la-informacion.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Acceso a la <br>
                         información</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 xl:mx-auto cajitaAnimacion">
+            <a href="https://aplicativosweb5.sunafil.gob.pe/gissunafil/" target="_blank" class="col-6 md:col-3 xl:col-2  cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/ubica-tu-intendencia-01.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Ubica tu <br>
                         intendencia</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 xl:mx-auto cajitaAnimacion">
+            <a href="https://reclamos.servicios.gob.pe/?institution_id=215" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/libro-de-reclamaciones.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Libro de <br>
                         reclamaciones</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 md:mx-auto cajitaAnimacion">
+            <a href="https://aplicativosweb7.sunafil.gob.pe/si.catalogoNormativo/#/" target="_blank" class="col-6 md:col-3 xl:col-2 cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold">
                     <img src="assets/img/SunafilEnLineaImg/APLICACIONES/nit-sunafil.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">NIT <br>
                         Sunafil</h6>
                 </div>
             </a>
-            <a href="#" class="col-6 md:col-3 xl:col-2 mx-auto cajitaAnimacion">
+            <a href="#" class="col-6 md:col-3 xl:col-2  cajitaAnimacion">
                 <div class="text-center p-3 margenCajita border-round-sm bg-white font-bold"><img src="assets/img/SunafilEnLineaImg/APLICACIONES/sunafil-te-capacita.svg" class="w-6" alt="">
                     <h6 class="color-titulo font-bold mt-2">Sunafil
                         te <br> capacita</h6>
                 </div>
-            </a>
+            </a> -->
         </div>
     </div>
-        <a class="containerAyuda hidden xl:flex mb-6 cursor-pointer">
+        <a class="containerAyuda mb-6 cursor-pointer">
             <img src="assets/img/SunafilEnLineaImg/btn-ayuda.svg" class=" containerBtnAyuda" alt="">
             <p class="text-white bg-blue-600">¿Necesitas ayuda?</p>
         </a>

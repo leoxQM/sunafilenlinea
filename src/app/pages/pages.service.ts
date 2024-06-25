@@ -5,11 +5,21 @@ import { Observable } from 'rxjs';
 
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PagesService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  //--------Sunafil en linea
+  getServiciosEmpleador(): Observable<any> {
+    const url = 'assets/data/serviciosEmpleador.json';
+    return this.http.get<any>(url);
+  }
+  getServiciosTrabajador(): Observable<any> {
+    const url = 'assets/data/serviciosTrabajador.json';
+    return this.http.get<any>(url);
+  }
+  //---------
 
   getDataPrecargada(): Observable<any> {
     const url = 'assets/data/datosPrueba.json';
@@ -41,12 +51,12 @@ export class PagesService {
     return this.http.get<any>(url);
   }
 
-  getvalidacionRUC(nroRuc:string) {
+  getvalidacionRUC(nroRuc: string) {
     const url = `${constantesApiWeb.validarRUC}?nroRuc=${nroRuc}`;
     return this.http.get<any>(url);
   }
 
-  getBuscarPersona(codTipoDoc: string, nroDocumento:string) {
+  getBuscarPersona(codTipoDoc: string, nroDocumento: string) {
     const url = `${constantesApiWeb.persona}${codTipoDoc}/${nroDocumento}`;
     return this.http.get<any>(url);
   }
@@ -61,12 +71,12 @@ export class PagesService {
     return this.http.get<any>(url);
   }
 
-  getMaterias(codreglab:number) {
+  getMaterias(codreglab: number) {
     const url = `${constantesApiWeb.materias}?codreglab=${codreglab}`;
     return this.http.get<any>(url);
   }
 
-  guardarAsistenciaTecnica(objeto:any){
+  guardarAsistenciaTecnica(objeto: any) {
     const url = `${constantesApiWeb.guardarAsistenciaTecnica}`;
     return this.http.post<any>(url, objeto);
   }

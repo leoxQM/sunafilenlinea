@@ -1,0 +1,92 @@
+[
+  {
+    "nombreServicioEmpleador": "Registra tu denuncia",
+    "icono": "registra-denuncia",
+    "url": "aplicativosweb2.sunafil.gob.pe/si.denunciasVirtuales/inicio"
+  },
+  {
+    "nombreServicioEmpleador": "Mesa de Partes Digital",
+    "icono": "mesa-de-partes",
+    "url": "aplicativosweb6.sunafil.gob.pe/si.mesaVirtual/"
+  },
+  {
+    "nombreServicioEmpleador": "Consulta tu trámite",
+    "icono": "consulta-tramite",
+    "url": "aplicativosweb7.sunafil.gob.pe/si.consultaTramite/"
+  },
+  {
+    "nombreServicioEmpleador": "Consulta tu expediente",
+    "icono": "consulta-exp",
+    "url": "aplicativosweb7.sunafil.gob.pe/si.consultaExpediente/"
+  },
+  {
+    "nombreServicioEmpleador": "Sunafil Responde",
+    "icono": "sunafil-responde",
+    "url": "aplicativosweb5.sunafil.gob.pe/si.consultasLaborales/inicio"
+  },
+  {
+    "nombreServicioEmpleador": "Verifica tu chamba",
+    "icono": "verifica-tu-chamba",
+    "url": "aplicativosweb6.sunafil.gob.pe/si.verificacionPlanillaElectronica/inicio"
+  },
+  {
+    "nombreServicioEmpleador": "Calculadora laboral",
+    "icono": "calculadora-laboral",
+    "url": "aplicativosweb6.sunafil.gob.pe/si.calculadoraLaboral/inicio"
+  },
+  {
+    "nombreServicioEmpleador": "SOS Alerta Sunafil",
+    "icono": "sos-alerta",
+    "url": "aplicativosweb7.sunafil.gob.pe/si.alerta/"
+  },
+  {
+    "nombreServicioEmpleador": "Identificación de inspectores",
+    "icono": "identificacion-de-insp",
+    "url": "aplicativosweb2.sunafil.gob.pe/si.consultaInspectores/"
+  },
+  {
+    "nombreServicioEmpleador": "Oportunidades laborales",
+    "icono": "oportunidades-laborales-01",
+    "url": "aplicativosweb2.sunafil.gob.pe/si.convocatoria/"
+  },
+  {
+    "nombreServicioEmpleador": "Ubica tu intendencia",
+    "icono": "ubica-tu-intendencia-01",
+    "url": "aplicativosweb5.sunafil.gob.pe/gissunafil/"
+  },
+  {
+    "nombreServicioEmpleador": "Acceso a la información",
+    "icono": "acceso-a-la-informacion",
+    "url": "aplicativosweb6.sunafil.gob.pe/si.saip/"
+  },
+  {
+    "nombreServicioEmpleador": "Libro de reclamaciones",
+    "icono": "libro-de-reclamaciones",
+    "url": "reclamos.servicios.gob.pe/?institution_id=215"
+  },
+  {
+    "nombreServicioEmpleador": "Denuncia actos de corrupción",
+    "icono": "denuncia-actos-corrupcion",
+    "url": "denuncias.servicios.gob.pe/?gobpe_id=455"
+  },
+  {
+    "nombreServicioEmpleador": "Datos abiertos gubernamentales",
+    "icono": "datos-abiertos-01",
+    "url": "aplicativosweb5.sunafil.gob.pe/si.consultaResoluciones/"
+  },
+  {
+    "nombreServicioEmpleador": "Resoluciones Sistema Inspectivos",
+    "icono": "resoluciones-inspectivas",
+    "url": "www.sunafil.gob.pe/portal/index.php?option=com_content&view=article&layout=edit&id=810"
+  },
+  {
+    "nombreServicioEmpleador": "NIT Sunafil",
+    "icono": "nit-sunafil",
+    "url": "aplicativosweb7.sunafil.gob.pe/si.catalogoNormativo/#/"
+  },
+  {
+    "nombreServicioEmpleador": "Sunafil te capacita",
+    "icono": "sunafil-te-capacita",
+    "url": ""
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "nombreServicioEmpleador": "Mesa de Partes Digital",
+    "icono": "mesa-de-partes",
+    "url": "aplicativosweb6.sunafil.gob.pe/si.mesaVirtual/"
+  },
+  {
+    "nombreServicioEmpleador": "Casilla electrónica",
+    "icono": "casilla",
+    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/b6474e23-8a3b-4153-b301-dafcc9646250/oauth2/login?originalUrl=https://casillaelectronica.sunafil.gob.pe/si.inbox/Login/Empresa&state=s"
+  },
+  {
+    "nombreServicioEmpleador": "Consulta tu expediente",
+    "icono": "consulta-exp",
+    "url": "aplicativosweb7.sunafil.gob.pe/si.consultaExpediente/"
+  },
+  {
+    "nombreServicioEmpleador": "Consulta tu trámite",
+    "icono": "consulta-tramite",
+    "url": "aplicativosweb7.sunafil.gob.pe/si.consultaTramite/"
+  },
+  {
+    "nombreServicioEmpleador": "Sunafil Responde",
+    "icono": "sunafil-responde",
+    "url": "aplicativosweb5.sunafil.gob.pe/si.consultasLaborales/inicio"
+  },
+  {
+    "nombreServicioEmpleador": "Identificación de inspectores",
+    "icono": "identificacion-de-insp",
+    "url": "aplicativosweb2.sunafil.gob.pe/si.consultaInspectores/"
+  },
+  {
+    "nombreServicioEmpleador": "Chequea tu contratista",
+    "icono": "chequea-contratista",
+    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/9b1dfad8-aebe-4905-89cc-84d7bfb3493a/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.validacionEmpresa/Login/Empresa&state=s"
+  },
+  {
+    "nombreServicioEmpleador": "Denuncia actos decorrupción",
+    "icono": "denuncia-actos-corrupcion",
+    "url": "denuncias.servicios.gob.pe/?gobpe_id=455"
+  },
+  {
+    "nombreServicioEmpleador": "Datos abiertos gubernamentales",
+    "icono": "datos-abiertos-01",
+    "url": "aplicativosweb5.sunafil.gob.pe/si.consultaResoluciones/"
+  },
+  {
+    "nombreServicioEmpleador": "Resoluciones sistema inspectivo",
+    "icono": "resoluciones-inspectivas",
+    "url": "www.sunafil.gob.pe/portal/index.php?option=com_content&view=article&layout=edit&id=810"
+  },
+  {
+    "nombreServicioEmpleador": "Cálculo cuota de empleo",
+    "icono": "calculo-cuota-empleo-02",
+    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/9b1dfad8-aebe-4905-89cc-84d7bfb3493a/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.validacionEmpresa/Login/Empresa&state=s"
+  },
+  {
+    "nombreServicioEmpleador": "Diagnóstico SST",
+    "icono": "diagnostico-sst",
+    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/7e30c2f1-f047-4ed6-a575-9f079c9f84da/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.encuestaSST/Login/Empresa&state=s"
+  },
+  {
+    "nombreServicioEmpleador": "Acceso a la información",
+    "icono": "acceso-a-la-informacion",
+    "url": "aplicativosweb6.sunafil.gob.pe/si.saip/"
+  },
+  {
+    "nombreServicioEmpleador": "Ubica tu intendencia",
+    "icono": "ubica-tu-intendencia-01",
+    "url": "aplicativosweb5.sunafil.gob.pe/gissunafil/"
+  },
+  {
+    "nombreServicioEmpleador": "Libro de reclamaciones",
+    "icono": "libro-de-reclamaciones",
+    "url": "reclamos.servicios.gob.pe/?institution_id=215"
+  },
+  {
+    "nombreServicioEmpleador": "NIT Sunafil",
+    "icono": "nit-sunafil",
+    "url": "aplicativosweb7.sunafil.gob.pe/si.catalogoNormativo/#/"
+  },
+  {
+    "nombreServicioEmpleador": "Sunafil te capacita",
+    "icono": "sunafil-te-capacita",
+    "url": ""
+  }
+]
