@@ -56,7 +56,6 @@ export class CSunafilEmpleadorComponent implements OnInit, OnDestroy {
       next: (rpta) => {
         console.log('listado: ', rpta);
         this.listDataServicios = rpta;
-        setTimeout(() => (this.triggerAnimation = true), 0);
       },
       error: () => {},
       complete() {},
