@@ -2,86 +2,103 @@
   {
     "nombreServicioEmpleador": "Mesa de Partes Digital",
     "icono": "mesa-de-partes",
-    "url": "aplicativosweb6.sunafil.gob.pe/si.mesaVirtual/"
+    "url": "aplicativosweb6.sunafil.gob.pe/si.mesaVirtual/",
+    "tooltip": "Presenta tus documentos de forma digital las 24 horas."
   },
   {
     "nombreServicioEmpleador": "Casilla electrónica",
     "icono": "casilla",
-    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/b6474e23-8a3b-4153-b301-dafcc9646250/oauth2/login?originalUrl=https://casillaelectronica.sunafil.gob.pe/si.inbox/Login/Empresa&state=s"
+    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/b6474e23-8a3b-4153-b301-dafcc9646250/oauth2/login?originalUrl=https://casillaelectronica.sunafil.gob.pe/si.inbox/Login/Empresa&state=s",
+    "tooltip": "Realiza trámite seguro y confiable."
   },
   {
     "nombreServicioEmpleador": "Consulta tu expediente",
     "icono": "consulta-exp",
-    "url": "aplicativosweb7.sunafil.gob.pe/si.consultaExpediente/"
+    "url": "aplicativosweb7.sunafil.gob.pe/si.consultaExpediente/",
+    "tooltip": "Realiza el seguimiento de la inspección solicitada."
   },
   {
     "nombreServicioEmpleador": "Consulta tu trámite",
     "icono": "consulta-tramite",
-    "url": "aplicativosweb7.sunafil.gob.pe/si.consultaTramite/"
+    "url": "aplicativosweb7.sunafil.gob.pe/si.consultaTramite/",
+    "tooltip": "Realiza el seguimiento de la inspección solicitada."
   },
   {
     "nombreServicioEmpleador": "Sunafil Responde",
     "icono": "sunafil-responde",
-    "url": "aplicativosweb5.sunafil.gob.pe/si.consultasLaborales/inicio"
+    "url": "aplicativosweb5.sunafil.gob.pe/si.consultasLaborales/inicio",
+    "tooltip": "Realiza consultas sobre temas sociolaborales y de seguridad y salud en el trabajo."
   },
   {
     "nombreServicioEmpleador": "Identificación de inspectores",
     "icono": "identificacion-de-insp",
-    "url": "aplicativosweb2.sunafil.gob.pe/si.consultaInspectores/"
+    "url": "aplicativosweb2.sunafil.gob.pe/si.consultaInspectores/",
+    "tooltip": "Identifica al personal inspectivo de la Sunafil."
   },
   {
     "nombreServicioEmpleador": "Chequea tu contratista",
     "icono": "chequea-contratista",
-    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/9b1dfad8-aebe-4905-89cc-84d7bfb3493a/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.validacionEmpresa/Login/Empresa&state=s"
+    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/9b1dfad8-aebe-4905-89cc-84d7bfb3493a/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.validacionEmpresa/Login/Empresa&state=s",
+    "tooltip": "Verifica si los trabajadores se encuentran registrados en la planilla electrónica"
   },
   {
     "nombreServicioEmpleador": "Denuncia actos decorrupción",
     "icono": "denuncia-actos-corrupcion",
-    "url": "denuncias.servicios.gob.pe/?gobpe_id=455"
+    "url": "denuncias.servicios.gob.pe/?gobpe_id=455",
+    "tooltip": "Denuncia un posible acto de corrupción en una entidad del estado."
   },
   {
     "nombreServicioEmpleador": "Datos abiertos gubernamentales",
     "icono": "datos-abiertos-01",
-    "url": "aplicativosweb5.sunafil.gob.pe/si.consultaResoluciones/"
+    "url": "aplicativosweb5.sunafil.gob.pe/si.consultaResoluciones/",
+    "tooltip": "Encuentra datos generados por entidades públicas que no fueron procesadas en formatos estándar e interoperables"
   },
   {
     "nombreServicioEmpleador": "Resoluciones sistema inspectivo",
     "icono": "resoluciones-inspectivas",
-    "url": "www.sunafil.gob.pe/portal/index.php?option=com_content&view=article&layout=edit&id=810"
+    "url": "www.sunafil.gob.pe/portal/index.php?option=com_content&view=article&layout=edit&id=810",
+    "tooltip": "Revisa y descarga las resoluciones emitidas por el Tribunal de Fizcalización Laboral"
   },
   {
     "nombreServicioEmpleador": "Cálculo cuota de empleo",
     "icono": "calculo-cuota-empleo-02",
-    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/9b1dfad8-aebe-4905-89cc-84d7bfb3493a/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.validacionEmpresa/Login/Empresa&state=s"
+    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/9b1dfad8-aebe-4905-89cc-84d7bfb3493a/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.validacionEmpresa/Login/Empresa&state=s",
+    "tooltip": "Conoce el número de trabajdores con discapacidad que debes contratar."
   },
   {
     "nombreServicioEmpleador": "Diagnóstico SST",
     "icono": "diagnostico-sst",
-    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/7e30c2f1-f047-4ed6-a575-9f079c9f84da/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.encuestaSST/Login/Empresa&state=s"
+    "url": "api-seguridad.sunat.gob.pe/v1/clientessol/7e30c2f1-f047-4ed6-a575-9f079c9f84da/oauth2/login?originalUrl=https://aplicativosweb6.sunafil.gob.pe/si.encuestaSST/Login/Empresa&state=s",
+    "tooltip": "Comprueba si cumples con las principales obligaciones en materia de seguridad y salud en el trabajo."
   },
   {
     "nombreServicioEmpleador": "Acceso a la información",
     "icono": "acceso-a-la-informacion",
-    "url": "aplicativosweb6.sunafil.gob.pe/si.saip/"
+    "url": "aplicativosweb6.sunafil.gob.pe/si.saip/",
+    "tooltip": "Atención a las solicitudes de acceso a la información pública"
   },
   {
     "nombreServicioEmpleador": "Ubica tu intendencia",
     "icono": "ubica-tu-intendencia-01",
-    "url": "aplicativosweb5.sunafil.gob.pe/gissunafil/"
+    "url": "aplicativosweb5.sunafil.gob.pe/gissunafil/",
+    "tooltip": "Conoce la ubicación de las intendencias regionales y plataformas de inspección de trabajo"
   },
   {
     "nombreServicioEmpleador": "Libro de reclamaciones",
     "icono": "libro-de-reclamaciones",
-    "url": "reclamos.servicios.gob.pe/?institution_id=215"
+    "url": "reclamos.servicios.gob.pe/?institution_id=215",
+    "tooltip": "Realiza tu reclamo"
   },
   {
     "nombreServicioEmpleador": "NIT Sunafil",
     "icono": "nit-sunafil",
-    "url": "aplicativosweb7.sunafil.gob.pe/si.catalogoNormativo/#/"
+    "url": "aplicativosweb7.sunafil.gob.pe/si.catalogoNormativo/#/",
+    "tooltip": "Permite acceder a las directivas, protocolos, criterios y lineamientos"
   },
   {
     "nombreServicioEmpleador": "Sunafil te capacita",
     "icono": "sunafil-te-capacita",
-    "url": ""
+    "url": "",
+    "tooltip": ""
   }
 ]

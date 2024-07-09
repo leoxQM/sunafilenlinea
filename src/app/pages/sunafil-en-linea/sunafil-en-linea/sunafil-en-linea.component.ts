@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { procesoComponents, viewComponents } from '@constantes';
 import { I_ChangeViewComponents } from '@interfaces';
+import { PagesService } from '../../pages.service';
 
 @Component({
   selector: 'app-sunafil-en-linea',
@@ -8,10 +9,11 @@ import { I_ChangeViewComponents } from '@interfaces';
   styleUrls: ['./sunafil-en-linea.component.scss']
 })
 export class SunafilEnLineaComponent {
-  
    vistaInicio: boolean = true;
    vistaEmpleador: boolean = false;
    vistaTrabajador: boolean = false;
+   nombreApp: string;
+   listDataServicios: any[] =[]
 
    constructor(){ }
 
@@ -39,6 +41,10 @@ export class SunafilEnLineaComponent {
           }
           break; 
       }
+   }
+
+   buscarServicio(nombreServicio: string){
+      this.nombreApp = nombreServicio;
    }
 
 }

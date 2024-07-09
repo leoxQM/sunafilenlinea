@@ -12,11 +12,13 @@ export class PagesService {
 
   //--------Sunafil en linea
   getServiciosEmpleador() {
-    const url = constantesApiWeb.serviciosEmpleador;
+    // const url = constantesApiWeb.serviciosEmpleador;
+    const url = 'assets/data/serviciosEmpleador.json';
     return this.http.get<any>(url);
   }
   getServiciosTrabajador(){
-    const url = constantesApiWeb.serviciosTrabajador;
+    // const url = constantesApiWeb.serviciosTrabajador;
+    const url = 'assets/data/serviciosTrabajador.json';
     return this.http.get<any>(url);
   }
   //---------

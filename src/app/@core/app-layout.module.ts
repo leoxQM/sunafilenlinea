@@ -27,7 +27,7 @@ import { ConfigModule } from './config/config.module';
     HttpClientModule,
     RouterModule,
     SharedPrimeNgModule,
-    ConfigModule
+    ConfigModule,
   ],
   exports: [
     AppLayoutComponent,

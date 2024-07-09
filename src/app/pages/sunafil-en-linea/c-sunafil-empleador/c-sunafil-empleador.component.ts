@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
 import { trigger, style, animate, transition, query, stagger } from '@angular/animations';
 import { procesoComponents, viewComponents } from '@constantes';
 import { I_ChangeViewComponents } from '@interfaces';
@@ -29,10 +29,12 @@ import { PagesService } from '../../pages.service';
     ]),
   ],
 })
-export class CSunafilEmpleadorComponent implements OnInit, OnDestroy {
+export class CSunafilEmpleadorComponent implements OnInit, OnDestroy, OnChanges  {
   @Output() OA_FollowingBack = new EventEmitter<I_ChangeViewComponents>();
+  @Input({ required: true }) nombreApp: string;
   listDataServicios: any[] = [];
   filteredDataServicios: any[] = [];
+  triggerAnimation: boolean = true;
   private navigationSubscription: Subscription;
   constructor(private router: Router, private servicePages: PagesService) {}
 
@@ -51,31 +53,63 @@ export class CSunafilEmpleadorComponent implements OnInit, OnDestroy {
     }
   }
 
-  getDataServicios() {
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['nombreApp'] && !changes['nombreApp'].firstChange) {
+      this.applyFilter();
+    }
+    // if (changes['nombreApp']) {
+    //   const newValue = changes['nombreApp'].currentValue;
+    //   if (newValue) {
+    //     setTimeout(() => {
+    //       console.log("valor recibido: ", newValue)
+    //       this.applyFilter();
+    //     });
+    //   }
+    // }
+  }
+
+  getDataServicios(): void {
     this.servicePages.getServiciosEmpleador().subscribe({
       next: (rpta) => {
         console.log('listado: ', rpta);
         this.listDataServicios = rpta;
+        this.filteredDataServicios = this.listDataServicios;
+        this.applyFilter();
+        console.log('filteredDataServicios: ', this.filteredDataServicios);
       },
-      error: () => {},
-      complete() {},
+      error: () => {
+        console.error('Error al obtener los servicios');
+      },
+      complete() {
+        console.log('getDataServicios completado');
+      },
     });
   }
+  
 
-  filterData(searchText: string) {
-    this.filteredDataServicios = this.listDataServicios.filter((service) =>
-      service.nombreServicioEmpleador
-        .toLowerCase()
-        .includes(searchText.toLowerCase())
-    );
+  normalizeString(str: string): string {
+    return str
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+  }
+
+  applyFilter(): void {
+    if (this.nombreApp) {
+      const normalizedNombreApp = this.normalizeString(this.nombreApp);
+      this.filteredDataServicios = this.listDataServicios.filter(servicio =>
+        this.normalizeString(servicio.nombreServicioEmpleador).includes(normalizedNombreApp)
+      );
+    } else {
+      this.filteredDataServicios = this.listDataServicios; 
+    }
+    console.log('filteredDataServicios: ', this.filteredDataServicios);
   }
 
   resetAnimation() {
     this.triggerAnimation = false;
     setTimeout(() => (this.triggerAnimation = true), 0);
   }
-
-  triggerAnimation = true;
 
   changeComponent() {
     this.OA_FollowingBack.emit({
