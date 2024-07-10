@@ -140,7 +140,7 @@ input {
     .containerAyuda p {
       position: absolute;
       margin-bottom: 5% !important;
-      left: 86%;
+      left: 83%;
       transform: translate(-50%,-250%);
       white-space: nowrap;
       overflow: hidden;
@@ -168,6 +168,16 @@ input {
     .headerItems{
         margin-bottom: 5%;
     }
+    .containerAyuda p {
+      position: absolute;
+      margin-bottom: 5% !important;
+      left: 86%;
+      transform: translate(-50%,-250%);
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 0;
+      transition: max-width 2s, transform 2s;
+  }
     .volverInicioHeader{
       margin-top: .5% !important;
     }
