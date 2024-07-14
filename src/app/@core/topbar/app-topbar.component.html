@@ -8,10 +8,10 @@
 <ng-container *ngIf="visEmpleadorHeader">
     <div class="w-full relative h-20rem xl:h-25rem containerWeb">
             <div class="block md:hidden">
-                <img src="assets/img/SunafilEnLineaImg/FONDOS/fondo-empleador-mobile.png" class="w-full h-20rem" alt="">
+                <img src="assets/img/SunafilEnLineaImg/FONDOS/back-sunafil-en-tus-manos-movil-rojo-movile.png" class="w-full h-20rem" alt="">
             </div>
             <div class="hidden md:block">
-                <img src="assets/img/SunafilEnLineaImg/FONDOS/fondo-empleador.png" class="w-full h-20rem xl:h-25rem containerWeb" alt="">
+                <img src="assets/img/SunafilEnLineaImg/FONDOS/back-sunafil-en-tus-manos-rojo-2.png" class="w-full h-20rem xl:h-25rem containerWeb" alt="">
             </div>
             <img src="assets/img/SunafilEnLineaImg/APLICACIONES/sunafil-logo-blanco.svg" class="logoBlancoSunafil" alt="">
             <a href="#" (click)="backEmpleador()" class="volverInicioHeader md:mt-2 lg:mt-1 text-white flex gap-3 align-items-center">
@@ -21,8 +21,8 @@
             <div class="absolute bottom-0  w-full right-0 headerItems">
                 <div class="text-center">
                     <h1 class="text-white font-bold xl:text-7xl">Sunafil en línea</h1>
-                    <p class="text-white text-xl lg:text-2xl">Al servicio del cuidadano</p>
-                    <input type="text" [(ngModel)]="nombreServicio" (input)="buscarServicio()" class="w-8 md:w-6 lg:w-4 bordeInput py-1 xl:w-3 pl-5 md:pl-5 xl:pl-5" pInputText/>
+                    <p class="text-white text-md lg:text-2xl">Todos nuestros servicios al servicio del cuidadano</p>
+                    <input type="text" [(ngModel)]="nombreServicio" (input)="buscarServicio()" [placeholder]="this.placeHolder" class="w-8 md:w-6 lg:w-4 bordeInput py-1 xl:w-3 pl-5 md:pl-5 xl:pl-5" pInputText/>
                     <a href="#" (click)="buscarServicio()">
                         <img src="assets/img/SunafilEnLineaImg/lupa.svg" class="lupa cursor-pointer" alt="">
                     </a>
@@ -33,10 +33,10 @@
 <ng-container *ngIf="visTrabajadorHeader">
     <div class="w-full relative h-20rem xl:h-25rem containerWeb">
         <div class="block md:hidden">
-            <img src="assets/img/SunafilEnLineaImg/FONDOS/fondo-trabajador-mobile.png" class="w-full h-20rem" alt="">
+            <img src="assets/img/SunafilEnLineaImg/FONDOS/back-sunafil-en-tus-manos-movil-azul-mobile.png" class="w-full h-20rem" alt="">
         </div>
         <div class="hidden md:block">
-            <img src="assets/img/SunafilEnLineaImg/FONDOS/fondo-trabajador.png" class="w-full h-20rem xl:h-25rem containerWeb" alt="">
+            <img src="assets/img/SunafilEnLineaImg/FONDOS/back-sunafil-en-tus-manos-azul.png" class="w-full h-20rem xl:h-25rem containerWeb" alt="">
         </div>
         <img src="assets/img/SunafilEnLineaImg/APLICACIONES/sunafil-logo-blanco.svg" class="logoBlancoSunafil" alt="">
         <a href="#" (click)="backTrabajador()" class="volverInicioHeader md:mt-2 lg:mt-3 text-white flex gap-3 align-items-center">
@@ -46,8 +46,8 @@
         <div class="absolute bottom-0  w-full right-0 headerItems">
             <div class="text-center">
                 <h1 class="text-white font-bold xl:text-7xl">Sunafil en línea</h1>
-                <p class="text-white text-xl lg:text-2xl">Al servicio del cuidadano</p>
-                <input type="text" [(ngModel)]="nombreServicio" (input)="buscarServicio()" class="w-8 md:w-6 lg:w-4 bordeInput py-1 xl:w-3 pl-5 md:pl-5 xl:pl-5" pInputText />
+                <p class="text-white text-md lg:text-2xl">Todos nuestros servicios al servicio del cuidadano</p>
+                <input type="text" [(ngModel)]="nombreServicio" [placeholder]="this.placeHolder" (input)="buscarServicio()" class="w-8 md:w-6 lg:w-4 bordeInput py-1 xl:w-3 pl-5 md:pl-5 xl:pl-5" pInputText />
                 <a href="#" (click)="buscarServicio()">
                     <img src="assets/img/SunafilEnLineaImg/lupa.svg" class="lupa cursor-pointer" alt="">
                 </a>

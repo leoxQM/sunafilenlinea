@@ -23,6 +23,7 @@ export class AppTopbarComponent implements OnInit {
   rutaImg: string;
   rutaImgMobile: string;
   items!: MenuItem[];
+  placeHolder: string = 'Ejemplo: Identificaciòn virtual de inspectores'
 
   constructor(public layoutService: LayoutService) {}
 
