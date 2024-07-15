@@ -171,10 +171,8 @@ input {
     .containerAyuda p {
       position: absolute;
       margin-bottom: 5% !important;
-      left: 86%;
+      left: 85%;
       transform: translate(-50%,-250%);
-      white-space: nowrap;
-      overflow: hidden;
       max-width: 0;
       transition: max-width 2s, transform 2s;
   }
@@ -300,5 +298,12 @@ input {
  .iconoWeb:hover {
      transform: scale(.9);
  }
+}
+//footer para tv de 70 pulgadas xd 
+@media(min-height: 1400px){
+  .footerWeb {
+    position: absolute !important;
+    bottom: 0% !important;
+  }
 }
 
