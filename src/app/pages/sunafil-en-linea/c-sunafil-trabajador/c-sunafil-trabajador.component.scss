@@ -1,9 +1,10 @@
-@media(min-width: 768px){
     .cajitaAnimacion { 
         margin: auto;
       } 
+      .margenCajita{
+        min-height: 170px  !important;
+     }
       
-} 
 
 @media(min-width: 1800px){
     .grid-container {  

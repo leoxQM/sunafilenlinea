@@ -89,7 +89,7 @@ export class CSunafilEmpleadorComponent implements OnInit, OnDestroy, OnChanges 
     if (this.nombreApp) {
       const normalizedNombreApp = this.normalizeString(this.nombreApp);
       this.filteredDataServicios = this.listDataServicios.filter(servicio =>
-        this.normalizeString(servicio.nombreServicioEmpleador).includes(normalizedNombreApp)
+        this.normalizeString(servicio.descripcion).includes(normalizedNombreApp)
       );
     } else {
       this.filteredDataServicios = this.listDataServicios; 
