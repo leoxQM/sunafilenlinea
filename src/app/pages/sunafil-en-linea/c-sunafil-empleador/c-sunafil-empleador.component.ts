@@ -57,15 +57,6 @@ export class CSunafilEmpleadorComponent implements OnInit, OnDestroy, OnChanges 
     if (changes['nombreApp'] && !changes['nombreApp'].firstChange) {
       this.applyFilter();
     }
-    // if (changes['nombreApp']) {
-    //   const newValue = changes['nombreApp'].currentValue;
-    //   if (newValue) {
-    //     setTimeout(() => {
-    //       console.log("valor recibido: ", newValue)
-    //       this.applyFilter();
-    //     });
-    //   }
-    // }
   }
 
   getDataServicios(): void {

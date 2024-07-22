@@ -51,12 +51,13 @@ input {
 }
 .bordeInput{
     border-radius: 15px;
+    padding-left: 25px;
 }
 .lupa{
-  position: absolute;
-  bottom: 6%;
-  left: 19%;
-  width: 3% !important;
+  // position: absolute;
+  bottom: 0%;
+  left: 18%;
+  width: 18px !important;
 }
 .contactenosText{
   display: flex;
@@ -71,12 +72,15 @@ input {
 }
 @media(min-width: 500px) and (max-width: 700px){
   .bordeInput{
-    padding-left: 7% !important;
+    padding-left: 30px !important;
   }
 }
 @media(min-width: 500px) and (max-width: 760px){
   .iconoRedes{
     width: 60% !important;
+  }
+  .bordeInput{
+    padding-left: 32px !important;
   }
 }
 @media(min-width: 768px){
@@ -88,12 +92,25 @@ input {
     margin-bottom: 4%;
   }
   .lupa {
-    bottom: 5%;
-    left: 27%;
-    width: 2% !important;
+    // bottom: 5%;
+    left: 26%;
+    // width: 2% !important;
+  }
+  .bordeInput{
+    padding-left: 32px !important;
   }
   .iconoSalir{
     width: 9% !important;
+  }
+}
+@media(min-width: 992px){
+  .lupa{
+    // bottom: 3%;
+    left: 33.9%;
+    // width: 1.8% !important;
+  }
+  .bordeInput{
+    padding-left: 28px !important;
   }
 }
 @media(min-width: 1024px){
@@ -104,21 +121,28 @@ input {
         left: 8%;
         width: 18% !important;
     }
-    .lupa{
-      bottom: 3%;
-      left: 33.8%;
-      width: 1.8% !important;
+    
+  }
+  @media(min-width: 1200px){
+    .lupa {
+    //   bottom: 3%;
+       left: 38%;
+    //   width: 1.2% !important;
     }
+    
   }
   @media(min-width: 1280px){
     .headerItems{
         margin-bottom: 4%;
       }
-    .lupa {
-      bottom: 3%;
-      left: 38%;
-      width: 1.2% !important;
-    }
+    // .lupa {
+    //   bottom: 3%;
+    //   left: 38%;
+    //   width: 1.2% !important;
+    // }
+    .bordeInput{
+      padding-left: 29px;
+  }
     .direccion{
       display: flex;
        gap:75px ;
@@ -231,6 +255,9 @@ input {
     .contactenosItems {
       width: 32%;
     }
+    .bordeInput{
+      padding-left: 37px;
+  }
 
   }
 .bg-lineaRoja{
@@ -267,9 +294,8 @@ input {
     bottom: 0% !important;
   }
   .lupa {
-    bottom: 3.9%;
-    left: 38%;
-    width: .8% !important;
+    // left: 33.8%;
+    width: 17px !important;
   }
   .iconoRedes{
     width: 60% !important;
