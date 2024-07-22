@@ -11,8 +11,6 @@ import { SharedPrimeNgModule } from '@primeNgModule';
 import { DirectiveAppModule } from 'src/app/@directives/directive-app.module';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { SharedAppService } from '@sharedApp';
-import { CServiciosSunafilComponent } from './c-servicios-sunafil/c-servicios-sunafil.component';
-import { AppTopbarComponent } from 'src/app/@core/topbar/app-topbar.component';
 import { AppLayoutModule } from 'src/app/@core/app-layout.module';
 import { PipeAppModule } from 'src/app/@pipes/pipe-app.module';
 
@@ -23,7 +21,6 @@ import { PipeAppModule } from 'src/app/@pipes/pipe-app.module';
     CSunafilTrabajadorComponent,
     CSunafilEmpleadorComponent,
     SunafilEnLineaComponent,
-    CServiciosSunafilComponent
   ],
   imports: [
     CommonModule,

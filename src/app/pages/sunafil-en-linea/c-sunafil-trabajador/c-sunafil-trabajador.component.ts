@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, inject, Input, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
 import { procesoComponents, viewComponents } from '@constantes';
 import { I_ChangeViewComponents } from '@interfaces';
 import { trigger, style, animate, transition, query, stagger } from '@angular/animations';
@@ -34,10 +34,12 @@ import { PagesService } from '../../pages.service';
 export class CSunafilTrabajadorComponent implements OnInit, OnDestroy {
   @Output() OA_FollowingBack = new EventEmitter<I_ChangeViewComponents>();
   @Input({ required: true }) nombreApp: string;
+  private router = inject(Router);
+  private servicePages =  inject(PagesService);
   listDataServicios: any[] = [];
   filteredDataServicios: any[] = [];
   private navigationSubscription: Subscription;
-  constructor(private router: Router, private servicePages: PagesService) {}
+  constructor() {}
 
   ngOnInit(): void {
     this.getDataServicios();

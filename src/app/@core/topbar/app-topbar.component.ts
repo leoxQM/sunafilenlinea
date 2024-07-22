@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, inject, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { LayoutService } from '../service/service.service';
 import { I_ChangeViewComponents } from '@interfaces';
@@ -19,13 +19,14 @@ export class AppTopbarComponent implements OnInit {
   @Input() visInicioHeader = false;
   @Input() visTrabajadorHeader = false;
   @Input() visEmpleadorHeader = false;
+  public layoutService = inject(LayoutService)
   nombreServicio: string = '';
   rutaImg: string;
   rutaImgMobile: string;
   items!: MenuItem[];
   placeHolder: string = 'Ejemplo: Identificaciòn virtual de inspectores'
 
-  constructor(public layoutService: LayoutService) {}
+  constructor() {}
 
   ngOnInit(): void {
       // this.rutaImg = this.visTrabajadorHeader == true ? '':''

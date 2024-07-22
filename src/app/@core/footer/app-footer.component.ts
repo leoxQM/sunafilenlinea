@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { LayoutService } from '../service/service.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { LayoutService } from '../service/service.service';
 })
 export class AppFooterComponent {
   @Input() visInicioFooter = false;
-  constructor(public layoutService: LayoutService) { }
+  public layoutService = inject(LayoutService)
+  constructor() { }
 
 }
